@@ -1,0 +1,14 @@
+name: aloha
+  
+topology:
+  nodes:
+    
+    PC1:
+      kind: linux
+      image: docker.io/esanchezv/hellt-gnmic:latest
+      binds:
+        - configs/python_scapy.sh:/root/python_scapy.sh
+      exec:
+        - chmod +x /root/python_scapy.sh
+        - bash /root/python_scapy.sh    
+      

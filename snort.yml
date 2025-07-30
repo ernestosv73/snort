@@ -1,9 +1,0 @@
-name: snort
-  
-topology:
-  nodes:
-    
-    snort:
-      kind: linux
-      image: ciscotalos/snort3:latest
-      
